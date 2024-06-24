@@ -1,0 +1,25 @@
+.newsPage {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title {
+    margin: 0;
+}
+
+.text {
+    margin: 0;
+}
+
+.inline {
+    display: flex;
+    gap: 4rem;
+}
+
+.button_blue {
+    color: white;
+    background-color: #007bff;
+    max-width: 400px;
+}

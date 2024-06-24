@@ -1,0 +1,35 @@
+.newsItem {
+    padding: 10px;
+    border: 1.5px solid #007bff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: content-box;
+}
+
+.newsItem:last-child {
+    border-bottom: none;
+}
+
+.newsItem h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.newsItem a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.newsItem a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.bold {
+    font-weight: 700;
+}

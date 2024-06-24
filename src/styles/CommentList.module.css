@@ -1,0 +1,17 @@
+.commentList {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.commentList h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .commentList {
+        padding: 5px;
+    }
+}

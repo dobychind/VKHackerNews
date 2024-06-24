@@ -1,0 +1,31 @@
+code {
+  white-space: pre-line;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:active {
+  background-color: #0056b3;
+}
+
+@media (max-width:768px) {
+  button{
+    font-size: 16px;
+  }
+}

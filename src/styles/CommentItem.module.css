@@ -1,0 +1,24 @@
+.commentItem {
+    padding: 10px;
+    border-bottom: 1px solid #007bff;
+}
+
+.commentItem:last-child {
+    border-bottom: none;
+}
+
+.commentItem .author {
+    font-weight: bold;
+    margin: 0;
+}
+
+.commentItem .text {
+    margin: 5px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.author {
+    font-size: larger;
+}
