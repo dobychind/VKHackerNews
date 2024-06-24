@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+### Hacker News SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот проект представляет собой одностраничное приложение (SPA), разработанное с использованием React и TypeScript, воспроизводящее функционал Hacker News. Он включает ленту новостей с пагинацией и бесконечной прокруткой, позволяющую пользователям просматривать и переходить к различным типам новостей. Каждая новость может быть открыта для просмотра деталей, включая комментарии, вложенные под каждой новостью.
 
-Currently, two official plugins are available:
+#### Особенности:
+- **Лента новостей:**
+  - Пагинация по 15 новостей.
+  - Поддержка трех типов сортировки новостей: лучшие новости, новые новости и топовые новости.
+  - Автоматическое обновление новостей каждые 30 секунд.
+  - Кнопка обновления для сброса таймера обновления новостей.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Детали новости:**
+  - Отображение заголовка новости, ссылки, рейтинг и автор.
+  - При клике на комментарии открывается вложенная ветка комментариев для каждой новости.
+  - Комментарии включают автора и текст для каждого комментария.
 
-## Expanding the ESLint configuration
+#### Технические детали:
+- Разработано с использованием Vite для сборки проекта.
+- Написано на TypeScript.
+- Используются CSS Modules.
+- Адаптивный дизайн.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Деплой:
+Проект развернут на [Vercel](https://vk-hacker-news.vercel.app).
 
-- Configure the top-level `parserOptions` property like this:
+#### Установка и запуск проекта:
+Чтобы установить и запустить проект локально, выполните следующие команды:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/dobychind/VKHackerNews.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Перейдите в каталог проекта:
+```bash
+cd your-repository
+```
+
+3. Установите зависимости:
+```bash
+npm install
+```
+
+4. Запустите проект:
+```bash
+npm run dev
+```
+
+Это запустит проект в режиме разработки на `http://localhost:3000`.
+
+#### Hacker News API:
+Для получения данных используется [Hacker News API](https://github.com/HackerNews/API).
+
+---
+
